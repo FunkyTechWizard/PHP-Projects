@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<div class="con">
+	<title>New employee starter form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="form_c">
+		<form action="ConfirmationPage.php" method="post">
+			<b><h2 class="p">Registration Form</h2>
+			<fieldset>
+				<legend>Employee's Personal Information</legend>
+				<div class="c1">
+				
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" maxlength="25" required><br><br><br>
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" maxlength="25" required><br><br><br>
+				
+				<label for="gender">Gender:</label>
+				<input type="radio" id="male" name="gender" value="male" required>
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label>
+				<input type="radio" id="other" name="gender" value="other">
+				<label for="other">Other</label><br><br><br>
+				
+				<label for="dob">Date of Birth:</label>
+				<input type="date" id="dob" name="dob" required><br><br><br>
+				
+				</div>
+				<div class="c2">
+				
+				<label for="address">Home Address:</label><br>
+				<textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+				
+				
+				<label for="postcode">Postcode:</label>
+				<input type="postcode" id="postcode" name="postcode" maxlength="9" required><br><br>
+				
+				
+				<label for="insuranceno">National Insurance Number:</label><br>
+				<div id="hi">
+				<input type="password" name="digit1" id="insuranceno" maxlength="1" size="1" tabindex="1">
+				<input type="password" name="digit2" id="insuranceno" maxlength="1" size="1"  required >
+				<input type="password" name="digit3" id="insuranceno" maxlength="1" size="1"  required>
+				<input type="password" name="digit4" id="insuranceno" maxlength="1" size="1"  required>
+				<input type="password" name="digit5" id="insuranceno" maxlength="1" size="1"  required>
+				<input type="password" name="digit6" id="insuranceno" maxlength="1" size="1"  required>
+				<input type="password" name="digit7" id="insuranceno" maxlength="1" size="1"  required>
+				<input type="password" name="digit8" id="insuranceno" maxlength="1" size="1"  required>
+				</div><br><br>
+				
+				<label for="registrationDate">Employement Start Date(dd-mm-yyyy) :</label>
+				<input type="date" id="registrationDate" name="registrationDate"  required><br><br>
+				</div>
+			</fieldset><br>
+			
+			<fieldset>
+				<legend>Employee's Contact Details</legend>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required><br><br>
+				
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required><br><br>
+				
+				<label for="bankName">Bank Name:</label>
+				<select id="bankName" name="bankName">
+					<option value="bank1">Scotia bank</option>
+					<option value="bank2">TD bank</option>
+					<option value="bank3">BMO bank</option>
+				</select><br><br>
+				
+				<label for="accountNo">Account Number:</label>
+				<input type="text" id="accountNo" name="accountNo" maxlength="8" required><br><br>
+				
+				<label for="Ename">Employer Name::</label>
+				<input type="text" id="Ename" name="Ename" onkeyup="this.value = this.value.toUpperCase();" required><br><br>
+				
+			</fieldset><br>
+			<div class="button_c">
+				<input type="submit" value="Submit">
+				<input type="reset" value="Clear">
+			</div><b>
+		</form>
+	</div>
+	</div>
+</body>
+</html>
